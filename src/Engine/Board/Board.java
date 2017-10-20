@@ -129,6 +129,20 @@ public class Board {
         }
     }
 
+    public Piece getPieceAtCoord(int x , int y) {
+        for(Piece p : whitePieces) {
+            if(p.getLocation().getX() == x && p.getLocation().getY() == y) {
+                return p;
+            }
+        }
+        for(Piece p : blackPieces) {
+            if(p.getLocation().getX() == x && p.getLocation().getY() == y) {
+                return p;
+            }
+        }
+        return null;
+    }
+
     public Coordinate makeCoordinate(int x , int y , Team team) throws Exception {
         boolean doReturn = false;
         for(Coordinate c : getValidCoords()) {
@@ -179,6 +193,77 @@ public class Board {
 
     public Collection<Piece> getBlackPieces() {
         return blackPieces;
+    }
+
+    public boolean pieceBetween(HexCoordinate c1 , Coordinate c2) {
+        if(c1.distanceTo(c2) == 1) {
+            return false;
+        }
+        Collection<Coordinate> inBetween = inBetween(c1,c2);
+        if(inBetween == null) {
+            return false;
+        }
+        for(Coordinate c : inBetween) {
+            if(getPieceAtCoord(c.getX() , c.getY()) != null) {
+               return true;
+            }
+        }
+
+        return false;
+    }
+
+    private Collection<Coordinate> inBetween(HexCoordinate c1 , Coordinate c2) {
+        HexCoordinate.Direction dir = c1.getDirectionTo(c2);
+        Collection<Coordinate> toReturn = new ArrayList<Coordinate>();
+        if (dir == HexCoordinate.Direction.S) {
+            int x = c1.getX();
+            int y = c1.getY() - 1;
+            while(y != c2.getY()) {
+                toReturn.add(HexCoordinate.makeCoordinate(x , y));
+                y--;
+            }
+        } else if (dir == HexCoordinate.Direction.N) {
+            int x = c1.getX();
+            int y = c1.getY() + 1;
+            while(y != c2.getY()) {
+                toReturn.add(HexCoordinate.makeCoordinate(x , y));
+                y++;
+            }
+        } else if (dir == HexCoordinate.Direction.NNE) {
+            int x = c1.getX() + 1;
+            int y = c1.getY();
+            while(x != c2.getX()) {
+                toReturn.add(HexCoordinate.makeCoordinate(x , y));
+                x++;
+            }
+        } else if (dir == HexCoordinate.Direction.NNW) {
+            int x = c1.getX() - 1;
+            int y = c1.getY() + 1;
+            while(x != c2.getX()) {
+                toReturn.add(HexCoordinate.makeCoordinate(x , y));
+                x--;
+                y++;
+            }
+        } else if (dir == HexCoordinate.Direction.SSE) {
+            int x = c1.getX() + 1;
+            int y = c1.getY() - 1;
+            while(x != c2.getX()) {
+                toReturn.add(HexCoordinate.makeCoordinate(x , y));
+                x++;
+                y--;
+            }
+        } else if (dir == HexCoordinate.Direction.SSW) {
+            int x = c1.getX() - 1;
+            int y = c1.getY();
+            while(x != c2.getX()) {
+                toReturn.add(HexCoordinate.makeCoordinate(x , y));
+                x--;
+            }
+        }
+        if(toReturn.size() == 0) {
+            return null;
+        }
+        return toReturn;
     }
 
     private BufferedImage createResizedCopy(Image originalImage, int scaledWidth,

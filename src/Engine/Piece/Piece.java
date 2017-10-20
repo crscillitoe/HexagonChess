@@ -6,7 +6,9 @@ import Engine.Coordinate.HexCoordinate;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.function.BiPredicate;
 
 public abstract class Piece {
 
@@ -14,15 +16,47 @@ public abstract class Piece {
     PieceType type;
     Image image;
     Team team;
+    Collection<BiPredicate<PredicateMaterials , Board>> andLambdas = new ArrayList<BiPredicate<PredicateMaterials, Board>>();
+    Collection<BiPredicate<PredicateMaterials , Board>> orLambdas = new ArrayList<BiPredicate<PredicateMaterials, Board>>();
 
     public Piece(HexCoordinate location, PieceType type, Image image, Team team) {
         this.location = location;
         this.type = type;
         this.image = image;
         this.team = team;
+        andLambdas = PieceLambdas.getAndLambdas(1);
+        orLambdas = PieceLambdas.getOrLambdas(1);
+        orLambdas.add(PieceLambdas.oneMove);
     }
 
-    public abstract Collection<Coordinate> getValidMoves(Board theBoard);
+    public Collection<Coordinate> getValidMoves(Board theBoard) {
+
+        ArrayList<Coordinate> toReturn = new ArrayList<Coordinate>();
+
+        for(Coordinate c : Board.getValidCoords()) {
+            PredicateMaterials materials = new PredicateMaterials(this , (HexCoordinate)c);
+            boolean add = true;
+            for(BiPredicate<PredicateMaterials , Board> predicate : andLambdas) {
+                if(!predicate.test(materials , theBoard)) {
+                    add = false;
+                }
+            }
+
+            if(add) {
+                if(!orLambdas.isEmpty()) {
+                    for (BiPredicate<PredicateMaterials, Board> predicate : orLambdas) {
+                        if (predicate.test(materials, theBoard)) {
+                            toReturn.add(c);
+                        }
+                    }
+                } else {
+                    toReturn.add(c);
+                }
+            }
+        }
+
+        return toReturn;
+    }
 
     public Team getTeam() {
         return team;
@@ -35,6 +69,10 @@ public abstract class Piece {
     public void movePiece(Coordinate where, Board theBoard) throws Exception {
         for(Coordinate c : getValidMoves(theBoard)) {
             if(where.equals(c)) {
+                Piece atCoord = theBoard.getPieceAtCoord(where.getX() , where.getY());
+                if(atCoord != null) {
+                   theBoard.removePiece(atCoord);
+                }
                 this.location = (HexCoordinate)where;
                 return;
             }

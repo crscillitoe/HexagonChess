@@ -21,6 +21,7 @@ public class Board {
     private Image canMoveImage;
     private final int rows = 10;
     private final int columns = 10;
+    private int turn;
 
     public int getRows() {
         return rows;
@@ -49,7 +50,14 @@ public class Board {
         return validBoardSquares;
     }
 
+    public int getTurn() { return turn; }
+
+    public void nextTurn() {
+        turn++;
+    }
+
     public Board() {
+        turn = 1;
         whitePieces = new ArrayList<Piece>();
         blackPieces = new ArrayList<Piece>();
 

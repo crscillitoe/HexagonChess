@@ -67,6 +67,10 @@ public abstract class Piece {
     }
 
     public void movePiece(Coordinate where, Board theBoard) throws Exception {
+        if(this.getTeam() == Team.WHITE && theBoard.getTurn() % 2 == 1
+                || this.getTeam() == Team.BLACK && theBoard.getTurn() % 2 == 0) {
+           throw new Exception("It is not your turn to move!");
+        }
         for(Coordinate c : getValidMoves(theBoard)) {
             if(where.equals(c)) {
                 Piece atCoord = theBoard.getPieceAtCoord(where.getX() , where.getY());
@@ -74,6 +78,7 @@ public abstract class Piece {
                    theBoard.removePiece(atCoord);
                 }
                 this.location = (HexCoordinate)where;
+                theBoard.nextTurn();
                 return;
             }
         }

@@ -15,7 +15,7 @@ import java.util.function.BiPredicate;
 public class Knight extends Piece {
     public Knight(HexCoordinate location, Image image, Team team) {
         super(location, PieceType.KNIGHT, image, team);
-        andLambdas = PieceLambdas.getAndLambdas(1);
+        andLambdas.clear();
         orLambdas = PieceLambdas.getOrLambdas(2);
     }
 }

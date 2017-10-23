@@ -71,12 +71,12 @@ public class Board {
         Image BlackRook = new ImageIcon(Board.class.getResource("../../Display/Shapes/BlackRook.png")).getImage();
         Image BlackPawn = new ImageIcon(Board.class.getResource("../../Display/Shapes/BlackPawn.png")).getImage();
 
-        Image WhiteKing = new ImageIcon(Board.class.getResource("../../Display/Shapes/BlackKing.png")).getImage();
-        Image WhiteQueen = new ImageIcon(Board.class.getResource("../../Display/Shapes/BlackQueen.png")).getImage();
-        Image WhiteKnight = new ImageIcon(Board.class.getResource("../../Display/Shapes/BlackKnight.png")).getImage();
-        Image WhiteBishop = new ImageIcon(Board.class.getResource("../../Display/Shapes/BlackBishop.png")).getImage();
-        Image WhiteRook = new ImageIcon(Board.class.getResource("../../Display/Shapes/BlackRook.png")).getImage();
-        Image WhitePawn = new ImageIcon(Board.class.getResource("../../Display/Shapes/BlackPawn.png")).getImage();
+        Image WhiteKing = new ImageIcon(Board.class.getResource("../../Display/Shapes/WhiteKing.png")).getImage();
+        Image WhiteQueen = new ImageIcon(Board.class.getResource("../../Display/Shapes/WhiteQueen.png")).getImage();
+        Image WhiteKnight = new ImageIcon(Board.class.getResource("../../Display/Shapes/WhiteKnight.png")).getImage();
+        Image WhiteBishop = new ImageIcon(Board.class.getResource("../../Display/Shapes/WhiteBishop.png")).getImage();
+        Image WhiteRook = new ImageIcon(Board.class.getResource("../../Display/Shapes/WhiteRook.png")).getImage();
+        Image WhitePawn = new ImageIcon(Board.class.getResource("../../Display/Shapes/WhitePawn.png")).getImage();
 
         Knight blackKnight = new Knight(HexCoordinate.makeCoordinate(3 , -5) , BlackKnight , Team.BLACK);
         Knight blackKnight2 = new Knight(HexCoordinate.makeCoordinate(2 , -5) , BlackKnight , Team.BLACK);

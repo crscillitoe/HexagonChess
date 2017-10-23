@@ -29,10 +29,21 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HexagonChess/Engine/Piece/Queen.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HexagonChess/Engine/Piece/Rook.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/HexagonChess/Engine/Piece/Team.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Display/Shapes/WhiteBishop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Display/Shapes/WhiteKing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Display/Shapes/WhiteKnight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Display/Shapes/WhitePawn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Display/Shapes/WhiteQueen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Display/Shapes/WhiteRook.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Display/Shapes/BlackBishop.png" afterPath="$PROJECT_DIR$/src/Display/Shapes/BlackBishop.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Display/Shapes/BlackKing.png" afterPath="$PROJECT_DIR$/src/Display/Shapes/BlackKing.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Display/Shapes/BlackKnight.png" afterPath="$PROJECT_DIR$/src/Display/Shapes/BlackKnight.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Display/Shapes/BlackPawn.png" afterPath="$PROJECT_DIR$/src/Display/Shapes/BlackPawn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Display/Shapes/BlackQueen.png" afterPath="$PROJECT_DIR$/src/Display/Shapes/BlackQueen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Display/Shapes/BlackRook.png" afterPath="$PROJECT_DIR$/src/Display/Shapes/BlackRook.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Engine/Board/Board.java" afterPath="$PROJECT_DIR$/src/Engine/Board/Board.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Engine/Piece/Knight.java" afterPath="$PROJECT_DIR$/src/Engine/Piece/Knight.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Engine/Piece/Piece.java" afterPath="$PROJECT_DIR$/src/Engine/Piece/Piece.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,47 +58,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="Piece.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Piece.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Engine/Piece/Piece.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="47" column="65" lean-forward="false" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+            <state relative-caret-position="748">
+              <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#474#514#0" expanded="true" />
                 <element signature="e#599#639#0" expanded="true" />
                 <element signature="e#1116#1128#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PieceLambdas.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Engine/Piece/PieceLambdas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="130" column="3" lean-forward="false" selection-start-line="130" selection-start-column="3" selection-end-line="130" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1922#2633#0" expanded="false" />
-                <element signature="e#2705#3508#0" expanded="false" />
-                <element signature="e#3580#4515#0" expanded="false" />
-                <element signature="e#4696#4736#0" expanded="true" />
-                <element signature="e#4826#4866#0" expanded="true" />
-                <element signature="e#5948#5988#0" expanded="true" />
-                <element signature="e#6078#6118#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Knight.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Engine/Piece/Knight.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,17 +83,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Engine/Board/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+            <state relative-caret-position="306">
+              <caret line="77" column="92" lean-forward="false" selection-start-line="77" selection-start-column="92" selection-end-line="77" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1605#1606#0" expanded="true" />
                 <element signature="e#1627#1628#0" expanded="true" />
                 <element signature="e#9801#9813#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Knight.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Engine/Piece/Knight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -219,9 +209,9 @@
         <option value="$PROJECT_DIR$/src/Engine/Piece/King.java" />
         <option value="$PROJECT_DIR$/src/Engine/Piece/Queen.java" />
         <option value="$PROJECT_DIR$/src/Engine/Piece/PieceLambdas.java" />
-        <option value="$PROJECT_DIR$/src/Engine/Piece/Knight.java" />
-        <option value="$PROJECT_DIR$/src/Engine/Board/Board.java" />
         <option value="$PROJECT_DIR$/src/Engine/Piece/Piece.java" />
+        <option value="$PROJECT_DIR$/src/Engine/Board/Board.java" />
+        <option value="$PROJECT_DIR$/src/Engine/Piece/Knight.java" />
       </list>
     </option>
   </component>
@@ -265,27 +255,7 @@
               <item name="HexagonChess" type="b2602c69:ProjectViewProjectNode" />
               <item name="HexagonChess" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Display" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HexagonChess" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HexagonChess" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Engine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HexagonChess" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HexagonChess" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="Board" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HexagonChess" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HexagonChess" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="Coordinate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HexagonChess" type="b2602c69:ProjectViewProjectNode" />
@@ -457,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508534221397</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="V">
+      <created>1508545895286</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1508545895286</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -486,7 +463,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.205625" sideWeight="0.4927396" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.205625" sideWeight="0.4927396" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294423" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -523,7 +500,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23216602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294423" sideWeight="0.49875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.205625" sideWeight="0.4927396" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.205625" sideWeight="0.4927396" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294423" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1934375" sideWeight="0.5072604" order="3" side_tool="true" content_ui="tabs" />
@@ -535,7 +512,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added everything" />
     <MESSAGE value="randomized piece move rules implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="randomized piece move rules implemented" />
+    <MESSAGE value="V" />
+    <option name="LAST_COMMIT_MESSAGE" value="V" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -632,16 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/Piece/Knight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Engine/Piece/Pawn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -690,28 +658,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Engine/Board/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1627#1628#0" expanded="true" />
-            <element signature="e#9801#9813#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Engine/Piece/Piece.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="47" column="65" lean-forward="false" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+        <state relative-caret-position="748">
+          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#474#514#0" expanded="true" />
             <element signature="e#599#639#0" expanded="true" />
             <element signature="e#1116#1128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Display/Shapes/WhiteKing.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/Piece/Knight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Display/Shapes/WhitePawn.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Engine/Board/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="77" column="92" lean-forward="false" selection-start-line="77" selection-start-column="92" selection-end-line="77" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1605#1606#0" expanded="true" />
+            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#9801#9813#0" expanded="true" />
           </folding>
         </state>
       </provider>
